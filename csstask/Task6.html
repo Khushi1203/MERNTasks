@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login-box {
+        height: 550px;
+        width: 400px;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+      }
+      .input-box {
+        position: relative;
+        width: 310px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+      }
+      label {
+        display: block;
+      }
+      .input-box input {
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+
+        padding: 0 35px 0 5px;
+      }
+      .input-box img {
+        margin-left: 100px;
+        height: 100px;
+        width: 100px;
+      }
+      .remember-me label input {
+        margin-right: 3px;
+      }
+      .remember-me a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .remember-me a:hover {
+        text-decoration: underline;
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #000;
+        font-weight: 500;
+      }
+
+      .register {
+        font-size: 0.9em;
+        color: #fff;
+        text-align: center;
+        margin: 25px 0 10px;
+      }
+
+      .register p a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .register p a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="login-box">
+        <form>
+          <div class="input-box">
+            <img src="./image1.png" alt="error" />
+            <label> Username</label>
+            <input type="username" required placeholder="Enter Username" />
+          </div>
+          <div class="input-box">
+            <label>Password</label>
+            <input type="password" required placeholder="Enter Password" />
+          </div>
+          <div class="remember-me">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit">Login</button>
+          <div class="register">
+            <p>
+              Don't have an account?
+              <a
+                href="https://accounts.google.com/v3/signin/identifier?ifkv=AS5LTASUTk1WkfO9KaifLaiftEB-db5EshX7uPdHijJxHnbO8tDmMzqoAocaIUyPlo5OiOlHRvPN-g&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S671929757%3A1718529806394058&ddm=0"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+.row {
+  display: flex;
+}
+.column {
+  flex: 50%;
+}
+.box1 {
+  height: 165px;
+  width: 202px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.list1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(240, 246, 255);
+}
+
+.item a {
+  display: block;
+  color: blue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.item a:hover {
+  background-color: orange;
+  color: white;
+}
+.box2 {
+  height: 45px;
+  width: 600px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.list2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(221, 217, 217);
+}
+.item1 {
+  float: left;
+}
+.item1 a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.item1 a:hover {
+  background-color: grey;
+  color: white;
+}

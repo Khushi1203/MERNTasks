@@ -7,7 +7,7 @@
     <style>
       table {
         height: 400px;
-        width: 600px;
+        width: 602px;
         margin-left: auto;
         margin-right: auto;
         border: 1px solid black;
@@ -20,29 +20,35 @@
         border-collapse: collapse;
         text-align: center;
       }
-      input {
-
-        border-collapse: collapse;
-      }
-      #input1{
-        margin-left: auto;
-        margin-right: auto;
-      }
+      .container {
+      border: 0px;
+      height: 200px;
+      position: relative;
+    }
+    button {
+      margin-top: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #FirstName, #LastName, #Password,#Address,#State,#Email,#Age,#number{
+       width:98%;
+    }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center; color: blue">Registration form</h1>
+    <h1 style="text-align: center; color: blue; margin-top: 50px;">Registration form</h1>
     <table>
       <tr>
         <th>FirstName</th>
         <td>
-          <input type="text" id="First Name" />
+          <input type="text" id="FirstName" />
         </td>
       </tr>
       <tr>
         <th>Last Name</th>
         <td>
-          <input type="text" id="Last Name" />
+          <input type="text" id="LastName" />
         </td>
       </tr>
       <tr>
@@ -85,7 +91,7 @@
       <tr>
         <th>Phone number</th>
         <td>
-          <input type="text" id="contact number" />
+          <input type="text" id="number" />
         </td>
       </tr>
       <tr>
@@ -355,8 +361,15 @@
       </tr>
       <tr>
         <th>Languages known</th>
-        <td>
-          <input type="checkbox" id="Password" />
+        <td style="text-align: start;">
+          <input type="checkbox" id="Language" value="English"/>
+          <label for="Language">English</label>
+          <input type="checkbox" id="Language" value="Kannada"/>
+          <label for="Language">Kannada</label>
+          <input type="checkbox" id="Language" value="Hindi"/>
+          <label for="Language">Hindi</label>
+          <input type="checkbox" id="Language" value="Telugu"/>
+          <label for="Language">Telugu</label>
         </td>
       </tr>
       <tr>
@@ -371,10 +384,8 @@
         </td>
       </tr>  
     </table>
-    <input
-            type="submit"
-            value="Register"
-            id="input1"
-          />
+    <div class="container">
+      <button type="submit">Register</button>
+    </div>
   </body>
 </html>

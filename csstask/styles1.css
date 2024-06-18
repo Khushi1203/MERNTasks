@@ -1,0 +1,61 @@
+table {
+  height: 150px;
+  width: 900px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+table,
+tr,
+th,
+td {
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 1cqw;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+}
+.box1 {
+  height: 4rem;
+  width: 9rem;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.box2 {
+  height: 4rem;
+  width: 9rem;
+  border: 2px solid green;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.box3 {
+  height: 4rem;
+  width: 9rem;
+  border: 2px solid green;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.box4 {
+  height: 4rem;
+  width: 9rem;
+  border: 2px solid green;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.box5 {
+  height: 4rem;
+  width: 9rem;
+  border: 2px solid green;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+}
