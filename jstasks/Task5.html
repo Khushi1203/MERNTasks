@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+    <style>
+      #form {
+        width: 800px;
+        height: 600px;
+        padding: 20px;
+      }
+      #form button {
+        margin-top: 10px;
+        margin-left: 60px;
+      }
+      .input-control {
+        margin: 10px;
+      }
+      .input-control.error input {
+        border-color: rgba(231, 23, 23, 0.753);
+      }
+      .input-control .error {
+        color: rgba(231, 23, 23, 0.753);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="/">
+        <div class="input-control">
+          <label for="name">Name:</label>
+          <input id="name" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="mail">Email:</label>
+          <input id="mail" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="site">Website:</label>
+          <input id="site" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="msg">Message:</label>
+          <input id="msg" type="text" />
+          <div class="error"></div>
+        </div>
+        <button type="submit" onclick="validateInputs()">Submit</button>
+      </form>
+    </div>
+
+    <script defer src="./t5.js"></script>
+  </body>
+</html>
